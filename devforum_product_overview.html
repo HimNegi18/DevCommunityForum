@@ -1,0 +1,192 @@
+
+<style>
+  .section { margin: 0 0 2rem; }
+  .section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-tertiary); margin: 0 0 12px; }
+  .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+  .fcard { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 14px 16px; border: 0.5px solid var(--color-border-tertiary); }
+  .fcard-icon { font-size: 16px; margin-bottom: 8px; }
+  .fcard-title { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 4px; }
+  .fcard-desc { font-size: 12px; color: var(--color-text-secondary); line-height: 1.5; margin: 0; }
+  .hero { background: var(--color-background-secondary); border-radius: var(--border-radius-lg); padding: 24px 28px; border: 0.5px solid var(--color-border-tertiary); margin: 0 0 28px; }
+  .hero-title { font-size: 20px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 6px; }
+  .hero-sub { font-size: 14px; color: var(--color-text-secondary); margin: 0 0 16px; line-height: 1.6; }
+  .pill-row { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pill { font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 20px; }
+  .pill-purple { background: #EEEDFE; color: #3C3489; }
+  .pill-teal { background: #E1F5EE; color: #085041; }
+  .pill-blue { background: #E6F1FB; color: #0C447C; }
+  .pill-coral { background: #FAECE7; color: #712B13; }
+  .pill-amber { background: #FAEEDA; color: #633806; }
+  .page-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+  .pcard { border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); overflow: hidden; }
+  .pcard-header { padding: 10px 14px; font-size: 12px; font-weight: 500; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); background: var(--color-background-secondary); }
+  .pcard-body { padding: 10px 14px; }
+  .pcard-row { font-size: 11px; color: var(--color-text-secondary); padding: 3px 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
+  .pcard-row:last-child { border-bottom: none; }
+  @media (prefers-color-scheme: dark) {
+    .pill-purple { background: #26215C; color: #CECBF6; }
+    .pill-teal { background: #04342C; color: #9FE1CB; }
+    .pill-blue { background: #042C53; color: #B5D4F4; }
+    .pill-coral { background: #4A1B0C; color: #F5C4B3; }
+    .pill-amber { background: #412402; color: #FAC775; }
+  }
+</style>
+
+<div style="padding: 1rem 0">
+  <div class="hero">
+    <p class="hero-title">DevForum — a developer Q&A community</p>
+    <p class="hero-sub">A place where developers ask questions, share knowledge, and help each other solve real problems. Think of it as a simpler, self-built version of Stack Overflow — you own the whole thing, built with MERN.</p>
+    <div class="pill-row">
+      <span class="pill pill-purple">MongoDB</span>
+      <span class="pill pill-blue">Express</span>
+      <span class="pill pill-teal">React</span>
+      <span class="pill pill-coral">Node.js</span>
+      <span class="pill pill-amber">React Quill</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-label">Core goal</p>
+    <div class="feature-grid">
+      <div class="fcard">
+        <div class="fcard-icon">?</div>
+        <p class="fcard-title">Ask questions</p>
+        <p class="fcard-desc">Post a question with a title, rich description, and tags like JavaScript or React.</p>
+      </div>
+      <div class="fcard">
+        <div class="fcard-icon">A</div>
+        <p class="fcard-title">Answer & help</p>
+        <p class="fcard-desc">Reply to any question with a formatted answer. The asker can mark yours as accepted.</p>
+      </div>
+      <div class="fcard">
+        <div class="fcard-icon">+</div>
+        <p class="fcard-title">Vote on quality</p>
+        <p class="fcard-desc">Upvote or downvote answers so the best ones rise to the top automatically.</p>
+      </div>
+      <div class="fcard">
+        <div class="fcard-icon">#</div>
+        <p class="fcard-title">Discover by tags</p>
+        <p class="fcard-desc">Filter the feed by topic tags and search questions by keyword or tag.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-label">All features</p>
+    <div class="feature-grid">
+      <div class="fcard">
+        <p class="fcard-title">User auth</p>
+        <p class="fcard-desc">Register, login, JWT-protected routes. Only logged-in users can post or vote.</p>
+      </div>
+      <div class="fcard">
+        <p class="fcard-title">Rich text editor</p>
+        <p class="fcard-desc">React Quill for formatting — bold, code blocks, lists — in questions and answers.</p>
+      </div>
+      <div class="fcard">
+        <p class="fcard-title">Nested comments</p>
+        <p class="fcard-desc">Reply directly to an answer with a comment. Threaded discussion under each answer.</p>
+      </div>
+      <div class="fcard">
+        <p class="fcard-title">User profile</p>
+        <p class="fcard-desc">Each user has a profile page showing their questions, answers, and reputation score.</p>
+      </div>
+      <div class="fcard">
+        <p class="fcard-title">Search & filter</p>
+        <p class="fcard-desc">Search questions by title keyword, filter by one or more tags, sort by date or votes.</p>
+      </div>
+      <div class="fcard">
+        <p class="fcard-title">Pagination</p>
+        <p class="fcard-desc">Home feed and tag pages load in pages — not all at once — using skip and limit.</p>
+      </div>
+      <div class="fcard">
+        <p class="fcard-title">Accept answer</p>
+        <p class="fcard-desc">The question author can mark one answer as the accepted solution. Shown with a checkmark.</p>
+      </div>
+      <div class="fcard">
+        <p class="fcard-title">Tag pages</p>
+        <p class="fcard-desc">Each tag (e.g. /tags/react) has its own page listing all questions with that tag.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-label">Pages you'll build</p>
+    <div class="page-row">
+      <div class="pcard">
+        <div class="pcard-header">/ — Home feed</div>
+        <div class="pcard-body">
+          <div class="pcard-row">List of questions (newest / most voted)</div>
+          <div class="pcard-row">Tag filter pills</div>
+          <div class="pcard-row">Search bar</div>
+          <div class="pcard-row">Pagination controls</div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-header">/questions/:id — Question detail</div>
+        <div class="pcard-body">
+          <div class="pcard-row">Full question (rich text)</div>
+          <div class="pcard-row">All answers sorted by votes</div>
+          <div class="pcard-row">Vote buttons on each answer</div>
+          <div class="pcard-row">Nested comments per answer</div>
+          <div class="pcard-row">Post your answer (Quill)</div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-header">/ask — Post a question</div>
+        <div class="pcard-body">
+          <div class="pcard-row">Title input</div>
+          <div class="pcard-row">Rich text body (Quill)</div>
+          <div class="pcard-row">Tag input (multi)</div>
+          <div class="pcard-row">Submit button</div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-header">/users/:id — Profile</div>
+        <div class="pcard-body">
+          <div class="pcard-row">Avatar + username</div>
+          <div class="pcard-row">Reputation score</div>
+          <div class="pcard-row">Their questions list</div>
+          <div class="pcard-row">Their answers list</div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-header">/tags/:tag — Tag page</div>
+        <div class="pcard-body">
+          <div class="pcard-row">All questions with this tag</div>
+          <div class="pcard-row">Paginated list</div>
+          <div class="pcard-row">Tag description (optional)</div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-header">/login & /register</div>
+        <div class="pcard-body">
+          <div class="pcard-row">Auth forms</div>
+          <div class="pcard-row">JWT stored in localStorage</div>
+          <div class="pcard-row">Redirect on success</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="margin-bottom:0">
+    <p class="section-label">What makes it different from a todo app</p>
+    <div class="feature-grid">
+      <div class="fcard">
+        <p class="fcard-title">Real relationships</p>
+        <p class="fcard-desc">Users, questions, answers, comments, and votes are all linked — complex MongoDB refs.</p>
+      </div>
+      <div class="fcard">
+        <p class="fcard-title">Community logic</p>
+        <p class="fcard-desc">Voting, reputation, and accepted answers require business logic, not just CRUD.</p>
+      </div>
+      <div class="fcard">
+        <p class="fcard-title">Rich content</p>
+        <p class="fcard-desc">HTML stored in the DB, rendered safely — introduces XSS awareness and sanitization.</p>
+      </div>
+      <div class="fcard">
+        <p class="fcard-title">Role-based actions</p>
+        <p class="fcard-desc">Only the author can accept an answer. Only the voter can remove their own vote.</p>
+      </div>
+    </div>
+  </div>
+</div>
